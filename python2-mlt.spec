@@ -1,4 +1,4 @@
-%global commit0 434dbcf62048cc1220c425c2adc77697b4d40ffb
+%global commit0 221ff239b9cbbc0e0b749f24e3f754eb087cb1f9
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
@@ -8,9 +8,9 @@
 
 Summary:	Python2 package to work with MLT
 Name:           python2-mlt
-Epoch: 		1
-Version:        6.16.0
-Release:        5%{?gver}%{?dist}
+Epoch:		1
+Version:        6.18.0
+Release:        1%{?gver}%{?dist}
 
 License:        GPLv3 and LGPLv2+
 URL:            http://www.mltframework.org/twiki/bin/view/MLT/
@@ -141,6 +141,9 @@ install -D -pm 0755 src/swig/python/_mlt.so %{buildroot}%{python2_sitearch}/_mlt
 %{python2_sitearch}/_mlt.so
 
 %changelog
+
+* Mon Nov 11 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 6.18.0-1.git221ff23
+- Updated to 6.18.0-1.git221ff23
 
 * Mon Oct 14 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 6.16.0-5.git434dbcf
 - python2 legacy package for compatibility
