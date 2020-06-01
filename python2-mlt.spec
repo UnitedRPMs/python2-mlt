@@ -10,7 +10,7 @@ Summary:	Python2 package to work with MLT
 Name:           python2-mlt
 Epoch:		1
 Version:        6.20.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 
 License:        GPLv3 and LGPLv2+
 URL:            http://www.mltframework.org/twiki/bin/view/MLT/
@@ -141,6 +141,9 @@ install -D -pm 0755 src/swig/python/_mlt.so %{buildroot}%{python2_sitearch}/_mlt
 %{python2_sitearch}/_mlt.so
 
 %changelog
+
+* Sun May 31 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.20.0-4
+- Rebuilt for mlt
 
 * Fri May 01 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.20.0-3
 - Rebuilt for opencv
