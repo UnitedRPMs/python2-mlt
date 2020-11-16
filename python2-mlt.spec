@@ -10,7 +10,7 @@ Summary:	Python2 package to work with MLT
 Name:           python2-mlt
 Epoch:		1
 Version:        6.22.1
-Release:        7%{?dist}
+Release:        8%{?dist}
 
 License:        GPLv3 and LGPLv2+
 URL:            http://www.mltframework.org/twiki/bin/view/MLT/
@@ -19,7 +19,7 @@ Source0:        https://github.com/mltframework/mlt/archive/%{commit0}.tar.gz#/%
 Patch:		python2_fix.patch
 
 BuildRequires:  frei0r-devel
-BuildRequires:  opencv-devel >= 4.4.0
+BuildRequires:  opencv-devel >= 4.5.0
 BuildRequires:  qt5-qtsvg-devel
 BuildRequires:  qt5-qt3d-devel
 BuildRequires:  libquicktime-devel
@@ -141,6 +141,9 @@ install -D -pm 0755 src/swig/python/_mlt.so %{buildroot}%{python2_sitearch}/_mlt
 %{python2_sitearch}/_mlt.so
 
 %changelog
+
+* Thu Nov 05 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.22.1-8
+- Rebuilt for opencv 
 
 * Sat Aug 08 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.22.1-7
 - Updated to 6.22.1
