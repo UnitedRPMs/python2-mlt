@@ -1,4 +1,4 @@
-%global commit0 f6e57f2659b1a5a136fa1c9df1b3359bd0b91647
+%global commit0 902c4c2d82514e812b3129a0aa3146a89bb898ec
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
@@ -9,8 +9,8 @@
 Summary:	Python2 package to work with MLT
 Name:           python2-mlt
 Epoch:		1
-Version:        6.22.1
-Release:        8%{?dist}
+Version:        6.24.0
+Release:        7%{?dist}
 
 License:        GPLv3 and LGPLv2+
 URL:            http://www.mltframework.org/twiki/bin/view/MLT/
@@ -141,6 +141,9 @@ install -D -pm 0755 src/swig/python/_mlt.so %{buildroot}%{python2_sitearch}/_mlt
 %{python2_sitearch}/_mlt.so
 
 %changelog
+
+* Sun Dec 27 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.24.0-7
+- Updated to 6.24.0
 
 * Thu Nov 05 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.22.1-8
 - Rebuilt for opencv 
