@@ -9,7 +9,7 @@
 Summary:	Python2 package to work with MLT
 Name:           python2-mlt
 Epoch:		1
-Version:        6.26.0
+Version:        6.26.1
 Release:        7%{?dist}
 
 License:        GPLv3 and LGPLv2+
@@ -141,6 +141,9 @@ install -D -pm 0755 src/swig/python/_mlt.so %{buildroot}%{python2_sitearch}/_mlt
 %{python2_sitearch}/_mlt.so
 
 %changelog
+
+* Tue Apr 27 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.26.1-7
+- Updated to 6.26.1
 
 * Sat Apr 17 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1:6.26.0-7
 - Updated to 6.26.0
